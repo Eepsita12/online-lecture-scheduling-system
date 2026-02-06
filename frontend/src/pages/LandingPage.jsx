@@ -51,7 +51,7 @@ const LandingPage = () => {
 
         {/* Footer */}
         <p className="landing-footer">
-          © 2025 Schedulr. All rights reserved.
+          © 2026 Schedulr. All rights reserved.
         </p>
       </div>
     </div>
