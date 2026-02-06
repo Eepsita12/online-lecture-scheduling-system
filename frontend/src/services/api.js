@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "http://localhost:4000/api",
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 // Request interceptor: Add token to every request
-api.interceptors.request.use(
+API.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -17,7 +17,7 @@ api.interceptors.request.use(
 );
 
 // Response interceptor: Handle auth errors globally
-api.interceptors.response.use(
+API.interceptors.response.use(
   (response) => response,
   (error) => {
     // If 401 Unauthorized, clear storage and redirect to login
@@ -29,4 +29,4 @@ api.interceptors.response.use(
   }
 );
 
-export default api;
+export default API;
