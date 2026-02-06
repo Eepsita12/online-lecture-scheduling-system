@@ -1,6 +1,6 @@
-# Online Lecture Scheduling System
+# Schedulr - Online Lecture Scheduling System
 
-A full-stack **MERN** web application designed to manage online lecture scheduling with role-based access control, real-time conflict prevention, and secure JWT authentication. Built with industry best practices for scalability and maintainability.
+A full-stack MERN web application designed to manage online lecture scheduling with role-based access control, real-time conflict prevention, and secure JWT authentication. Built with industry best practices for scalability and maintainability.
 
 ---
 
