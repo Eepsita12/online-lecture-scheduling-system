@@ -7,7 +7,15 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 4000
 
-app.use(cors())
+app.use(cors({
+  origin: [
+    'https://your-vercel-https://online-lecture-scheduling-system-de.vercel.app/.vercel.app',  
+    'http://localhost:4000'  
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json())
 
 mongoose
