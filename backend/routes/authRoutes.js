@@ -5,7 +5,6 @@ const User = require("../models/User");
 const {registerAdmin,login} = require("../controllers/authController");
 
 const router = express.Router();
-exports.router = router;
 
 //Admin Register
 router.post("/register", registerAdmin);
