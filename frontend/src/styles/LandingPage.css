@@ -1,0 +1,238 @@
+/* Landing Page Container */
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.landing-content {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+.landing-header {
+  margin-bottom: 40px;
+  animation: slideDown 0.6s ease-out;
+}
+
+.landing-logo {
+  font-size: 48px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.landing-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 24px;
+  margin: 10px 0 0 0;
+  font-weight: 300;
+}
+
+/* Description */
+.landing-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  margin-bottom: 50px;
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+/* Login Options */
+.landing-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+  animation: slideUp 0.6s ease-out 0.4s both;
+}
+
+/* Login Card */
+.login-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.login-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.admin-card {
+  border-top-color: #667eea;
+}
+
+.admin-card:hover {
+  border-top-color: #5568d3;
+}
+
+.instructor-card {
+  border-top-color: #764ba2;
+}
+
+.instructor-card:hover {
+  border-top-color: #653a8c;
+}
+
+/* Card Icon */
+.card-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+/* Card Title */
+.login-card h2 {
+  font-size: 28px;
+  margin: 0 0 12px 0;
+  color: #1a202c;
+  font-weight: 600;
+}
+
+/* Card Description */
+.login-card p {
+  color: #718096;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Card Button */
+.card-button {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.admin-button:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #653a8c 100%);
+  transform: scale(1.02);
+}
+
+.instructor-button {
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  color: white;
+}
+
+.instructor-button:hover {
+  background: linear-gradient(135deg, #653a8c 0%, #e086fa 100%);
+  transform: scale(1.02);
+}
+
+/* Footer */
+.landing-footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin: 0;
+  animation: fadeIn 0.8s ease-out 0.6s both;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-logo {
+    font-size: 36px;
+  }
+
+  .landing-subtitle {
+    font-size: 18px;
+  }
+
+  .landing-options {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .login-card h2 {
+    font-size: 22px;
+  }
+
+  .card-icon {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-container {
+    padding: 10px;
+  }
+
+  .landing-logo {
+    font-size: 28px;
+  }
+
+  .landing-subtitle {
+    font-size: 16px;
+  }
+
+  .landing-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .login-card {
+    padding: 25px 15px;
+  }
+
+  .login-card h2 {
+    font-size: 18px;
+  }
+
+  .login-card p {
+    font-size: 14px;
+  }
+}
