@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 4000
 
 origin: [
-  'https://online-lecture-scheduling-system-de.vercel.app',  // ✅ CORRECT
+  'https://online-lecture-scheduling-system.vercel.app', 
   'http://localhost:4000',
   'http://localhost:5173'
 ],
